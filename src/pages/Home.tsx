@@ -22,6 +22,7 @@ import {
 import { TESTIMONIALS, FAQS, DOCTORS } from '../data/content';
 import { PageId } from '../types';
 import CandidateQuiz from '../components/CandidateQuiz';
+import heroSmileImg from '../assets/images/radiant_smile_success_1780233988998.png';
 
 interface HomeProps {
   onNavigate: (page: PageId) => void;
@@ -246,9 +247,9 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="relative bg-white rounded-[32px] p-6 border border-slate-200/80 overflow-hidden shadow-xl">
                 
                 {/* Embedded Beautiful generated portrait */}
-                <div className="h-64 rounded-2xl overflow-hidden relative mb-6 border border-slate-100 group">
+                <div className="h-64 rounded-2xl overflow-hidden relative mb-6 border border-slate-100 group bg-[#f1f5f9] bg-gradient-to-br from-slate-100 to-slate-200/50">
                   <img
-                    src="/src/assets/images/radiant_smile_success_1780233988998.png"
+                    src={heroSmileImg}
                     alt="Radiant cosmetic dental smile success"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -903,7 +904,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <div className="space-y-4">
                   
                   {/* Photo with golden halo frame */}
-                  <div className="aspect-[4/5] rounded-2.5xl overflow-hidden relative border border-slate-100">
+                  <div className="aspect-[4/5] rounded-2.5xl overflow-hidden relative border border-slate-100 bg-[#f1f5f9] bg-gradient-to-br from-slate-100 to-slate-200/50">
                     <img
                       src={doc.image}
                       alt={doc.name}

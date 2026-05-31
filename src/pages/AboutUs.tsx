@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Award, ShieldCheck, Heart, User, CheckCircle, Clock } from 'lucide-react';
 import { DOCTORS, TEAM_MEMBERS, TESTIMONIALS } from '../data/content';
 import { PageId } from '../types';
+import receptionImg from '../assets/images/luxury_dental_reception_1780233969583.png';
 
 interface AboutUsProps {
   subPage: PageId;
@@ -71,12 +72,14 @@ export default function AboutUs({ subPage, onNavigate }: AboutUsProps) {
 
             <div className="lg:col-span-5">
               <div className="bg-slate-50 border border-slate-100 rounded-3xl p-6 shadow-md">
-                <img
-                  src="/src/assets/images/luxury_dental_reception_1780233969583.png"
-                  alt="Elite Lobby Setup"
-                  className="w-full h-48 object-cover rounded-2xl mb-4 shadow-sm"
-                  referrerPolicy="no-referrer"
-                />
+                <div className="w-full h-48 rounded-2xl mb-4 overflow-hidden bg-[#f1f5f9] bg-gradient-to-br from-slate-100 to-slate-200/50 shadow-sm">
+                  <img
+                    src={receptionImg}
+                    alt="Elite Lobby Setup"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
                 <h3 className="font-serif text-base text-brand-navy font-semibold">Full-Arch Specialty Hub</h3>
                 <p className="text-2xs text-slate-600 font-sans leading-relaxed mt-1">
                   We are engineered to resolve high-complexity cases. For individuals with substantial bone loss or failed restorations, we coordinate diagnostic, surgical, and prosthetic steps in-house.
@@ -95,12 +98,14 @@ export default function AboutUs({ subPage, onNavigate }: AboutUsProps) {
                   className="bg-white border border-slate-100 rounded-3xl p-6 space-y-6 shadow-lg shadow-slate-100/80 hover:shadow-xl hover:border-brand-teal/30 transition-all duration-300"
                 >
                   <div className="flex flex-col sm:flex-row gap-6">
-                    <img
-                      src={doc.image}
-                      alt={doc.name}
-                      className="w-full sm:w-40 h-48 object-cover rounded-2xl shrink-0 shadow-sm border border-slate-100"
-                      referrerPolicy="no-referrer"
-                    />
+                    <div className="w-full sm:w-40 h-48 rounded-2xl overflow-hidden shrink-0 shadow-sm border border-slate-100 bg-[#f1f5f9] bg-gradient-to-br from-slate-100 to-[#e2e8f0]">
+                      <img
+                        src={doc.image}
+                        alt={doc.name}
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
                     <div className="space-y-2">
                       <span className="text-[9px] font-mono text-brand-teal uppercase tracking-wider font-bold">
                         Abilene Certified Expert

@@ -1,5 +1,6 @@
 import { ShieldCheck, CheckCircle, Smartphone, Award, DollarSign, Calendar, Sparkles } from 'lucide-react';
 import { PageId } from '../types';
+import receptionImg from '../assets/images/luxury_dental_reception_1780233969583.png';
 
 interface ImplantsProps {
   subPage: PageId;
@@ -157,9 +158,9 @@ export default function Implants({ subPage, onNavigate }: ImplantsProps) {
 
               <div className="lg:col-span-5">
                 <div className="bg-white border border-slate-100 rounded-3xl p-6 space-y-4 shadow-lg shadow-slate-100/50">
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-slate-150 shadow-sm">
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-slate-150 shadow-sm bg-[#f1f5f9] bg-gradient-to-br from-slate-100 to-slate-200/50">
                     <img
-                      src="/src/assets/images/luxury_dental_reception_1780233969583.png"
+                      src={receptionImg}
                       alt="Luxury Clinic Environment"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
