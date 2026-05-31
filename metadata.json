@@ -1,0 +1,6 @@
+{
+  "name": "Leedy Dental",
+  "description": "A cinematic, world-class luxury dental brand experience for Leedy Dental: full-mouth restoration, dental implants, and elite cosmetic smile makeovers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
